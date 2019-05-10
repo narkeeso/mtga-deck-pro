@@ -31,7 +31,7 @@ export const cardStore = writable({
 export async function getCards(filters, sort) {
   const colon = encodeURIComponent(":");
 
-  let queries = ["game:arena"];
+  let queries = [];
   let sorting = `order=${sort.by}&dir=${sort.dir}`;
 
   if (filters.setCode) {
