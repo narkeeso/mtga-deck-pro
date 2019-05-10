@@ -28,7 +28,7 @@
 
 <style>
   #app {
-    padding: 50px 20px;
+    padding: 20px;
   }
 
   #cards .card img {
