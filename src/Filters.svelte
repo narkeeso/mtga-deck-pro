@@ -3,7 +3,6 @@
   import { setStore, getCards } from "./store";
 
   const DEFAULT_SET_CODE = "war";
-  const DEFAULT_SORT_BY = "cmc";
   const COLORS = [
     {
       name: "All",

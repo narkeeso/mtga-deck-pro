@@ -46,19 +46,27 @@
     transform: scale(1.1);
   }
 
-  #deck li {
-    cursor: pointer;
+  #deck {
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
   }
+
+  #deck li {
+    cursor: pointer;
+  }
 </style>
 
 <section id="app" class="uk-container uk-container-expand uk-height-viewport">
-  <header>
-    <h1>Deck Builder</h1>
+  <header uk-grid>
+    <div class="uk-width-auto">
+      <h1>MTGA Deck Pro</h1>
+    </div>
+    <div class="uk-width-expand uk-inline">
+      <button class="uk-button uk-position-right">Share</button>
+    </div>
   </header>
 
   <hr />
@@ -81,7 +89,7 @@
               <div class="card" on:click={() => addCard(card)}>
                 <img
                   alt={card.name}
-                  src={card.image_uris ? card.image_uris.small : ''} />
+                  src={card.image_uris ? card.image_uris.normal : ''} />
               </div>
             </div>
           {/each}
