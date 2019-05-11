@@ -16,7 +16,8 @@
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
     "start": "sirv public --port ${PORT}",
-    "start:dev": "sirv public --dev"
+    "start:dev": "sirv public --dev",
+    "now-build": "build"
   },
   "dependencies": {
     "lodash.debounce": "^4.0.8",
