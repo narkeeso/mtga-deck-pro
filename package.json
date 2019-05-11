@@ -17,7 +17,7 @@
     "dev": "run-p start:dev autobuild",
     "start": "sirv public --port ${PORT}",
     "start:dev": "sirv public --dev",
-    "now-build": "build"
+    "now-build": "run-p build"
   },
   "dependencies": {
     "lodash.debounce": "^4.0.8",
